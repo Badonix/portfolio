@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         rubik: "Rubik",
+        ubuntu: "Ubuntu",
       },
     },
   },

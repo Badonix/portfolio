@@ -6,6 +6,28 @@
   font-family: Rubik;
   src: url("/fonts/RubikDoodleShadow-Regular.ttf");
 }
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Italic.ttf");
+  font-weight: italic;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Light.ttf");
+  font-weight: lighter;
+}
+* {
+  scroll-behavior: smooth;
+}
 body {
   background-color: black;
   height: 4000px;
@@ -16,7 +38,12 @@ body {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
+html {
+  scroll-snap-type: y proximity;
+}
+section {
+  scroll-snap-align: start;
+}
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -31,6 +58,7 @@ body {
   right: 0;
   height: 10px;
   background: white;
+  z-index: 999999999;
   transform-origin: 0%;
 }
 .cont {

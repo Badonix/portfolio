@@ -1,7 +1,8 @@
-import { animate, inView, motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { Navbar } from "@/components";
 import useParallax from "@/hooks/useParallax";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import { SecondSection } from "@/components/SecondSection";
 export default function Home() {
   const ref = useRef(null);
   useParallax();
@@ -15,12 +16,12 @@ export default function Home() {
       >
         <div className="lines-cont"></div>
       </motion.div>
-      <motion.div className="absolute w-screen">
+      <div className="absolute w-screen">
         <Navbar />
         <div className="">
           <div
             ref={ref}
-            className="hello flex justify-center items-center h-screen"
+            className="hello flex justify-center items-center h-screen flex-col gap-8"
           >
             <motion.h1
               animate={{ x: 0, opacity: 1 }}
@@ -35,9 +36,25 @@ export default function Home() {
             >
               Hello there
             </motion.h1>
+            <motion.a
+              href="#second-section"
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              type="button"
+              transition={{
+                delay: 2,
+                duration: 2,
+                type: "spring",
+                stiffness: 100,
+              }}
+              class="inline-block font-rubik rounded-full border-2 border-neutral-50 px-6  py-2  text-2xl uppercase leading-normal text-neutral-50   hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            >
+              Start
+            </motion.a>
           </div>
         </div>
-      </motion.div>
+      </div>
+      <SecondSection />
       <img
         src="/assets/black-cat.gif"
         className="fixed w-24 bottom-0 right-5"
