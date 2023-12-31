@@ -49,7 +49,17 @@ export default function Home() {
         animate={{ x: "120vw" }}
         transition={{
           duration: 10,
-          delay: Math.random() * 5,
+          delay: Math.random() * 5 + 5,
+        }}
+      />
+      <motion.img
+        src="/assets/running-cat.gif"
+        className="fixed w-24 bottom-0 flip right-24"
+        initial={{ right: -100 }}
+        animate={{ left: "-110vw" }}
+        transition={{
+          duration: 15,
+          delay: Math.random() * 5 + 20,
         }}
       />
     </>
