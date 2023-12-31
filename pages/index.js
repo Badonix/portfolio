@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components";
 import useParallax from "@/hooks/useParallax";
