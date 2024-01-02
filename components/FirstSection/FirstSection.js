@@ -1,16 +1,14 @@
 import { Navbar } from "../Navbar";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 export const FirstSection = () => {
-  const ref = useRef(null);
+  const helloRef = useRef(null);
+  const navbarShouldShow = !useInView(helloRef);
   return (
     <div className="absolute w-screen">
-      <Navbar />
+      <Navbar navbarShouldShow={navbarShouldShow} />
       <div className="">
-        <div
-          ref={ref}
-          className="hello flex justify-center items-center h-screen flex-col gap-8"
-        >
+        <div className="hello flex justify-center items-center h-screen flex-col gap-8 relative">
           <motion.h1
             animate={{ x: 0, opacity: 1 }}
             transition={{
@@ -24,6 +22,10 @@ export const FirstSection = () => {
           >
             Hello there
           </motion.h1>
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            ref={helloRef}
+          ></div>
           <motion.a
             href="#second-section"
             initial={{ y: -50, opacity: 0 }}

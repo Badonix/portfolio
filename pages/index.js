@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import useParallax from "@/hooks/useParallax";
 import { SecondSection } from "@/components/SecondSection";
 import FirstSection from "@/components/FirstSection/FirstSection";

@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
-export const Navbar = () => {
+export const Navbar = ({ navbarShouldShow }) => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -9,16 +9,16 @@ export const Navbar = () => {
   return (
     <>
       <motion.div className="progress-bar" style={{ scaleX }} />
-      {/* <motion.nav className="flex items-center justify-between py-6 px-16 fixed w-full top-0 left-0">
-        <div>
-          
-        </div>
-        <ul className="flex text-white gap-8 items-center text-2xl">
-          <li className="underline-hover cursor-pointer">Experience</li>
-          <li className="cursor-pointer underline-hover">Skills</li>
-          <li className="cursor-pointer underline-hover">Contact</li>
-        </ul>
-      </motion.nav> */}
+      {navbarShouldShow && (
+        <motion.nav className="flex items-center justify-between py-6 px-16 fixed w-full top-0 left-0">
+          <div></div>
+          <ul className="flex text-white gap-8 items-center text-2xl">
+            <li className="underline-hover cursor-pointer">Experience</li>
+            <li className="cursor-pointer underline-hover">Skills</li>
+            <li className="cursor-pointer underline-hover">Contact</li>
+          </ul>
+        </motion.nav>
+      )}
     </>
   );
 };
