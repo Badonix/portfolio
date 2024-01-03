@@ -10,7 +10,6 @@ export default function Home() {
       <motion.div
         initial={{ x: 0, scale: 0 }}
         animate={{ x: 0, scale: 1 }}
-        // transition={{ duration: 4, type: "spring", stiffness: 200 }}
         className="cont"
       >
         <div className="lines-cont"></div>

@@ -1,9 +1,8 @@
 import { Navbar } from "../Navbar";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import { useFirstSection } from "./useFirstSection";
 export const FirstSection = () => {
-  const helloRef = useRef(null);
-  const navbarShouldShow = !useInView(helloRef);
+  const { helloRef, navbarShouldShow } = useFirstSection();
   return (
     <div className="absolute w-screen">
       <Navbar navbarShouldShow={navbarShouldShow} />

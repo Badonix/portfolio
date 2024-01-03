@@ -7,6 +7,8 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { animate, inView } from "framer-motion";
+import { useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 
 export const useThirdSection = () => {
@@ -50,5 +52,19 @@ export const useThirdSection = () => {
       },
     ],
   };
+
+  useEffect(() => {
+    inView("#in-view2", () => {
+      const chartAnimation = animate(
+        ".chart",
+        { y: [200, 0], scale: [0, 1] },
+        { type: "spring", stiffness: 200, duration: 1.5 }
+      );
+
+      return () => {
+        chartAnimation.stop();
+      };
+    });
+  });
   return { data, options, Bar };
 };
