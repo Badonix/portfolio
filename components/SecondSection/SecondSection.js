@@ -35,13 +35,14 @@ export const SecondSection = () => {
           About <span className="text-orange-400">Me</span>
         </h2>
         <p className="description text-white font-ubuntu text-xl max-w-2xl">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source.
+          Hi, I'm Nick, a 17-year-old high school senior deeply passionate about
+          web development for the past 2.5 years. With 4 years of coding
+          experience, I bring a blend of creativity and technical proficiency to
+          every project. Outside the digital realm, I adore cats and find joy in
+          solving math problems. Let's bring your ideas to life!
+        </p>
+        <p className="text-gray-400 italic font-ubuntu self-end">
+          ... (Thanks to ChatGPT)
         </p>
       </div>
       <img
