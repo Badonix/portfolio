@@ -18,10 +18,16 @@ export const SecondSection = () => {
         { x: [500, 0], opacity: [0, 1] },
         { type: "spring", delay: 0.2 }
       );
+      const authorAnimation = animate(
+        ".author",
+        { x: [-500, 0], opacity: [0, 1] },
+        { type: "spring", delay: 0.2 }
+      );
       return () => {
         aboutMeanimation.stop();
         descriptionAnimation.stop();
         imageAnimation.stop();
+        authorAnimation.stop();
       };
     });
   });
@@ -41,7 +47,7 @@ export const SecondSection = () => {
           every project. Outside the digital realm, I adore cats and find joy in
           solving math problems. Let's bring your ideas to life!
         </p>
-        <p className="text-gray-400 italic font-ubuntu self-end">
+        <p className="author text-gray-400 italic font-ubuntu self-end">
           ... (Thanks to ChatGPT)
         </p>
       </div>
