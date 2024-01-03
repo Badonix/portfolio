@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import useParallax from "@/hooks/useParallax";
 import { SecondSection } from "@/components/SecondSection";
 import FirstSection from "@/components/FirstSection/FirstSection";
+import { ThirdSection } from "@/components";
 export default function Home() {
   useParallax();
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </motion.div>
       <FirstSection />
       <SecondSection />
+      <ThirdSection />
       <img
         src="/assets/black-cat.gif"
         className="fixed w-24 bottom-0 right-5"

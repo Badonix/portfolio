@@ -44,7 +44,8 @@ export const SecondSection = () => {
           Hi, I'm Nick, a 17-year-old high school senior deeply passionate about
           web development for the past 2.5 years. With 4 years of coding
           experience, I bring a blend of creativity and technical proficiency to
-          every project. Outside the digital realm, I adore cats and find joy in
+          every project. Outside the digital realm, I adore{" "}
+          <span className="text-pink-300 font-bold">CATS</span> and find joy in
           solving math problems. Let's bring your ideas to life!
         </p>
         <p className="author text-gray-400 italic font-ubuntu self-end">

@@ -19,6 +19,9 @@ module.exports = {
         rubik: "Rubik",
         ubuntu: "Ubuntu",
       },
+      spacing: {
+        200: "200%",
+      },
     },
   },
   plugins: [],
