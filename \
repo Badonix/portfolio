@@ -29,16 +29,12 @@ export const FourthSection = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="bg-white h-card rounded-xl relative w-full flex items-center justify-center flex-col">
-            <div className="absolute x-1/2 -translate-x-1/2 top-4">
-              <h1 className="text-center text-white absolute x-1/2 -translate-x-1/2 top-4">
-                Tailwind.css
-              </h1>
-            </div>
+          <div clasName="h-300 rounded-xl bg-white flex items-center justify-center flex-col">
+            <h1 className="text-center text-white">gamarjoba</h1>
             <img
               alt="tailwind"
               src="/assets/skills/tailwind.png"
-              className=" h-24 object-cover"
+              className="w-16 h-16 object-cover"
             />
           </div>
         </SwiperSlide>

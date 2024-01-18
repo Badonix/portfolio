@@ -5,6 +5,7 @@ import {
   ThirdSection,
   FirstSection,
   SecondSection,
+  FifthSection,
 } from "@/components";
 export default function Home() {
   useParallax();
@@ -21,11 +22,18 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
       <img
         src="/assets/black-cat.gif"
         className="fixed w-24 bottom-0 right-5"
+        alt="cat"
       />
-      <img src="/assets/quby.gif" className="fixed w-24 bottom-0 left-5" />
+      <img
+        alt="quby"
+        img
+        src="/assets/quby.gif"
+        className="fixed w-24 bottom-0 left-5"
+      />
       <motion.img
         src="/assets/running-cat.gif"
         className="fixed w-24 bottom-0 -left-24"

@@ -23,6 +23,9 @@ module.exports = {
         200: "200%",
         300: "300%",
       },
+      height: {
+        card: "300px",
+      },
     },
   },
   plugins: [],

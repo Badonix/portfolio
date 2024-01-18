@@ -36,7 +36,7 @@ export const FirstSection = () => {
               type: "spring",
               stiffness: 100,
             }}
-            class="inline-block font-rubik rounded-full border-2 border-neutral-50 px-6  py-2  text-2xl uppercase leading-normal text-neutral-50   hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            className="inline-block font-rubik rounded-full border-2 border-neutral-50 px-6  py-2  text-2xl uppercase leading-normal text-neutral-50   hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
           >
             Start
           </motion.a>
