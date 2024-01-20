@@ -7,8 +7,16 @@ import {
   SecondSection,
   FifthSection,
 } from "@/components";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 export default function Home() {
+  const router = useRouter();
   useParallax();
+  useEffect(() => {
+    if (window.location.hostname !== "localhost") {
+      router.push("/notice");
+    }
+  });
   return (
     <>
       <motion.div
