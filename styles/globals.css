@@ -35,9 +35,6 @@ body {
   overflow-x: hidden;
 }
 
-.swiper-slide {
-  width: auto;
-}
 .flip {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -129,6 +126,6 @@ section {
 }
 
 .swiper-slide {
-  width: 300px;
+  width: 300px !important;
   height: 300px;
 }
