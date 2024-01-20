@@ -34,35 +34,38 @@ export default function Home() {
       <FourthSection />
       <ThirdSection />
       <FifthSection />
-      <img
-        src="/assets/black-cat.gif"
-        className="fixed w-24 bottom-0 right-5"
-        alt="cat"
-      />
-      <img
-        alt="quby"
-        src="/assets/quby.gif"
-        className="fixed w-24 bottom-0 left-5"
-      />
-      <motion.img
-        src="/assets/running-cat.gif"
-        className="fixed w-24 bottom-0 -left-24"
-        animate={{ x: "120vw" }}
-        transition={{
-          duration: 10,
-          delay: Math.random() * 5 + 5,
-        }}
-      />
-      <motion.img
-        src="/assets/running-cat.gif"
-        className="fixed w-24 bottom-0 flip right-24"
-        initial={{ right: -100 }}
-        animate={{ left: "-110vw" }}
-        transition={{
-          duration: 15,
-          delay: Math.random() * 5 + 20,
-        }}
-      />
+
+      <div className="w-screen relative overflow-x-hidden">
+        <img
+          src="/assets/black-cat.gif"
+          className="z-40 fixed w-24 bottom-0 right-5"
+          alt="cat"
+        />
+        <img
+          alt="quby"
+          src="/assets/quby.gif"
+          className="fixed z-40 w-24 bottom-0 left-5"
+        />
+        <motion.img
+          src="/assets/running-cat.gif"
+          className="fixed w-24 bottom-0 -left-24"
+          animate={{ x: "120vw" }}
+          transition={{
+            duration: 10,
+            delay: Math.random() * 5 + 5,
+          }}
+        />
+        <motion.img
+          src="/assets/running-cat.gif"
+          className="fixed w-24 bottom-0 flip right-24"
+          initial={{ right: -100 }}
+          animate={{ left: "-110vw" }}
+          transition={{
+            duration: 15,
+            delay: Math.random() * 5 + 20,
+          }}
+        />
+      </div>
     </>
   );
 }

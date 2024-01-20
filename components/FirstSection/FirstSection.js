@@ -17,7 +17,7 @@ export const FirstSection = () => {
               stiffness: 200,
             }}
             initial={{ x: -3000, opacity: 0 }}
-            className="font-rubik text-white text-8xl"
+            className="text-center font-rubik text-white text-8xl"
           >
             Hello there
           </motion.h1>
