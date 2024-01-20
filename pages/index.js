@@ -30,7 +30,6 @@ export default function Home() {
       />
       <img
         alt="quby"
-        img
         src="/assets/quby.gif"
         className="fixed w-24 bottom-0 left-5"
       />
