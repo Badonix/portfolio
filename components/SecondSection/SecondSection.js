@@ -12,12 +12,12 @@ export const SecondSection = () => {
           About <span className="text-orange-400">Me</span>
         </h2>
         <p className="description text-white font-ubuntu text-xl max-w-2xl">
-          Hi, I'm Nick, a 17-year-old high school senior deeply passionate about
-          web development for the past 2.5 years. With 4 years of coding
+          Hi, I&apos;m Nick, a 17-year-old high school senior deeply passionate
+          about web development for the past 2.5 years. With 4 years of coding
           experience, I bring a blend of creativity and technical proficiency to
           every project. Outside the digital realm, I adore{" "}
           <span className="text-pink-300 font-bold">CATS</span> and find joy in
-          solving math problems. Let's bring your ideas to life!
+          solving math problems. Let&apos;s bring your ideas to life!
         </p>
         <p className="author text-gray-400 italic font-ubuntu self-end">
           ... (Thanks to ChatGPT)
