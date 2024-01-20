@@ -10,8 +10,8 @@ export const useFourthSection = () => {
       );
       const titleAnimation = animate(
         ".skills-title",
-        { y: [-150, 0], opacity: [0, 1] },
-        { type: "spring", stiffness: 300, duration: 1.5 },
+        { opacity: [0, 1] },
+        { type: "spring", stiffness: 300, duration: 3 },
       );
 
       return () => {
