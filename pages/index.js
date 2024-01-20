@@ -20,8 +20,8 @@ export default function Home() {
       </motion.div>
       <FirstSection />
       <SecondSection />
-      <ThirdSection />
       <FourthSection />
+      <ThirdSection />
       <FifthSection />
       <img
         src="/assets/black-cat.gif"

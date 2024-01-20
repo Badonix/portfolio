@@ -20,7 +20,12 @@ export const Navbar = ({ navbarShouldShow }) => {
             <div></div>
             <ul className="flex text-white gap-8 items-center text-2xl">
               <li className="underline-hover cursor-pointer">Experience</li>
-              <li className="cursor-pointer underline-hover">Skills</li>
+              <a
+                className="cursor-pointer underline-hover"
+                href="#skills-in-view"
+              >
+                Skills
+              </a>
               <li className="cursor-pointer underline-hover">Contact</li>
             </ul>
           </motion.nav>

@@ -6,10 +6,15 @@ import "swiper/css/pagination";
 import { SkillsData } from "./SkillsData";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { SkillCard } from "../SkillCard";
+import { useFourthSection } from "./useFourthSection";
 export const FourthSection = () => {
+  useFourthSection();
   return (
-    <section className="h-screen w-screen flex justify-center items-center absolute top-300">
-      <h2 className="text-white text-3xl absolute top-6 left-1/2 -translate-x-1/2">
+    <section
+      id="skills-in-view"
+      className="h-screen w-screen flex justify-center items-center absolute top-200"
+    >
+      <h2 className="skills-title text-white text-3xl absolute top-12 left-1/2 -translate-x-1/2">
         Technologies I&apos;ve worked with
       </h2>
       <Swiper
@@ -26,7 +31,7 @@ export const FourthSection = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="skills-swiper"
       >
         {SkillsData.map((skill, index) => {
           return (

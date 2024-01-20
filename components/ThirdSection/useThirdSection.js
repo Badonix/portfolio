@@ -18,7 +18,7 @@ export const useThirdSection = () => {
     BarElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
   );
   const options = {
     responsive: true,
@@ -48,7 +48,7 @@ export const useThirdSection = () => {
     datasets: [
       {
         data: [5, 5, 4, 3],
-        backgroundColor: "rgba(255, 166, 0, 0.5)",
+        backgroundColor: "rgba(255, 166, 0, 0.8)",
       },
     ],
   };
@@ -58,7 +58,7 @@ export const useThirdSection = () => {
       const chartAnimation = animate(
         ".chart",
         { y: [200, 0], scale: [0, 1] },
-        { type: "spring", stiffness: 200, duration: 1.5 }
+        { type: "spring", stiffness: 200, duration: 1.5 },
       );
 
       return () => {
