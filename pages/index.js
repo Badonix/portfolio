@@ -13,7 +13,10 @@ export default function Home() {
   const router = useRouter();
   useParallax();
   useEffect(() => {
-    if (window.location.hostname !== "localhost") {
+    if (
+      window.location.hostname !== "localhost" &&
+      !sessionStorage.getItem("iKnow")
+    ) {
       router.push("/notice");
     }
   });
