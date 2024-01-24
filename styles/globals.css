@@ -147,3 +147,7 @@ html {
   width: 300px !important;
   height: 300px;
 }
+svg path,
+svg rect {
+  fill: #ff6700;
+}

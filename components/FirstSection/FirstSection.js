@@ -12,7 +12,7 @@ export const FirstSection = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{
               duration: 2,
-              delay: 1,
+              delay: 3,
               type: "spring",
               stiffness: 200,
             }}
@@ -31,7 +31,7 @@ export const FirstSection = () => {
             animate={{ y: 0, opacity: 1 }}
             type="button"
             transition={{
-              delay: 2,
+              delay: 4.5,
               duration: 2,
               type: "spring",
               stiffness: 100,
